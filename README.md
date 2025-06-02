@@ -7,29 +7,20 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License"/>
 </p>
 
-![AWS Nuke Banner](screenshots/aws resources before-before.png)  
-*Initial state of AWS resources before running AWS Nuke. This shows the AWS account with existing resources that will be cleaned up.*
+![AWS Nuke Banner](screenshots/aws-resources-before.png)  
+*Initial state of AWS resources before running AWS Nuke.*
 
 ---
 
 ## 📖 What is AWS Nuke?
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Open%20Source-Yes-brightgreen?style=flat-square&logo=github" alt="Open Source"/>
-  <img src="https://img.shields.io/badge/Automation-100%25-blueviolet?style=flat-square&logo=githubactions" alt="Automation"/>
-</p>
+AWS Nuke is an open-source tool designed to delete all resources in an AWS account, restoring it to a clean slate. This is particularly useful for testing, development, or compliance purposes.
 
-AWS Nuke is an open-source tool designed to delete all resources in an AWS account. It ensures that your account is restored to a clean slate, similar to its default state. This is particularly useful for testing, development, or compliance purposes.
+For detailed documentation, visit the [AWS Nuke GitHub Repository](https://github.com/rebuy-de/aws-nuke).
 
 ---
 
 ## 🛠 Prerequisites
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Step%201-Install%20AWS%20CLI-blue?style=flat-square" alt="Step 1"/>
-  <img src="https://img.shields.io/badge/Step%202-Configure%20AWS%20CLI-blue?style=flat-square" alt="Step 2"/>
-  <img src="https://img.shields.io/badge/Step%203-Install%20AWS%20Nuke-blue?style=flat-square" alt="Step 3"/>
-</p>
 
 Before you begin, ensure the following:
 
@@ -51,7 +42,7 @@ Follow the official guide to install the AWS CLI:
 aws --version
 ```
 ![AWS CLI Version](screenshots/aws-v.png)  
-*Run `aws --version` to verify that the AWS CLI is installed correctly and accessible from your terminal.*
+*Verify that the AWS CLI is installed correctly.*
 
 ### 2️⃣ Configure AWS CLI
 
@@ -61,8 +52,8 @@ aws configure
 ```
 Provide your AWS access key, secret key, region, and output format.
 
-![AWS Configure](screenshots/aws config.png) 
-*Configure your AWS CLI with your credentials and default region. This step is required for AWS Nuke to access your account.*
+![AWS Configure](screenshots/aws-config.png)  
+*Configure your AWS CLI with your credentials and default region.*
 
 ### 3️⃣ Install AWS Nuke
 
@@ -81,7 +72,7 @@ Install AWS Nuke based on your operating system:
   winget install cloud-nuke
   ```
 
-*Choose the installation command based on your OS. This will install the AWS Nuke tool required for the reset process.*
+*Choose the installation command based on your OS.*
 
 ---
 
@@ -96,86 +87,86 @@ Install AWS Nuke based on your operating system:
    ![AWS CLI Version](screenshots/aws-v.png)  
    *Ensure the AWS CLI is working before proceeding.*
 
-2. **List S3 Buckets (Optional)**
+2. **List S3 Buckets (Optional)**  
    ```bash
    aws s3 ls
    ```
-   ![AWS S3 List](screenshots/aws test.png) 
+   ![AWS S3 List](screenshots/aws-test.png)  
    *Optionally, list your S3 buckets to see what resources exist before nuking.*
 
-3. **Check AWS Nuke Help**
+3. **Check AWS Nuke Help**  
    ```bash
    cloud-nuke -h
    ```
    ![Cloud Nuke Help](screenshots/cloud-nuke-h.png)  
-   *Display the help menu for AWS Nuke to see available commands and options.*
+   *Display the help menu for AWS Nuke.*
 
-4. **Inspect AWS Resources**
+4. **Inspect AWS Resources**  
    ```bash
    cloud-nuke inspect-aws --region ap-south-1
    ```
-   ![Inspect AWS Resources](screenshots/cloud-nuke inspect.png)  
-   *Scan your AWS account for all resources in the specified region before deletion.*
+   ![Inspect AWS Resources](screenshots/cloud-nuke-inspect.png)  
+   *Scan your AWS account for all resources in the specified region.*
 
-   ![Inspect Result](screenshots/cloud-nuke-inspect result.png)  
-   *Detailed output of resources found during inspection. Review this to understand what will be affected.*
+   ![Inspect Result](screenshots/cloud-nuke-inspect-result.png)  
+   *Detailed output of resources found during inspection.*
 
    ### 🎬 Video Walkthrough: Inspect Command
    [![Watch the Inspect Command Demo](screenshots/aws-inspect-command-thumbnail.png)](screenshots/Administrator_ Command Prompt - cloud-nuke  inspect-aws 2025-05-28 23-55-25.mp4)  
-   *Click the image above to watch the video walkthrough of running the `inspect-aws` command. This demonstrates how to inspect resources before deletion.*
+   *Click the image above to watch the video walkthrough of running the `inspect-aws` command.*
 
-5. **List Resource Types**
+5. **List Resource Types**  
    ```bash
    cloud-nuke aws --list-resource-types
    ```
-   ![List Resource Types](screenshots/cloud-nuke aws check.png)  
-   *See all resource types that AWS Nuke can delete. Useful for targeting specific resources.*
+   ![List Resource Types](screenshots/cloud-nuke-aws-check.png)  
+   *See all resource types that AWS Nuke can delete.*
 
-6. **Perform a Dry Run**
+6. **Perform a Dry Run**  
    ```bash
    cloud-nuke aws --resource-type ec2 --dry-run
    ```
-   ![Dry Run](screenshots/Dry Run.png)  
-   *Simulate the deletion process to preview what will be removed. Always do a dry run before actual nuking!*
+   ![Dry Run](screenshots/Dry-Run.png)  
+   *Simulate the deletion process to preview what will be removed.*
 
-7. **Execute AWS Nuke**
+7. **Execute AWS Nuke**  
    ```bash
    cloud-nuke aws --region ap-south-1
    ```
    ![Nuke Confirmation](screenshots/aws-nuke-confirm.png)  
-   *AWS Nuke will ask for confirmation before proceeding with deletion.*
+   *AWS Nuke will ask for confirmation before proceeding.*
 
    ![Final Nuke List and Confirmation](screenshots/final-nuke-list-and-confirmation.png)  
-   *Final list of resources to be deleted. Double-check this list before confirming!*
+   *Final list of resources to be deleted.*
 
    ![Confirming Nuke](screenshots/confirming-nuke.png)  
    *Type 'yes' to confirm and start the nuke operation.*
 
    ![Nuke Done](screenshots/nuke-done.png)  
-   *AWS Nuke has finished deleting resources. Your account should now be clean.*
+   *AWS Nuke has finished deleting resources.*
 
    ![After Nuke Check](screenshots/After-nuke-check-from-cmd.png)  
-   *Verify that all resources have been deleted by listing resources again. Your account should now be empty.*
+   *Verify that all resources have been deleted.*
 
 ---
 
 ## 🔒 Security Notice
 
-**IMPORTANT**: This repository contains documentation about AWS resource management. When using this guide:
+**IMPORTANT**: When using this guide:
 
 1. Never commit AWS credentials to GitHub.
 2. Always use AWS best practices for credential management.
 3. Use AWS IAM roles and temporary credentials where possible.
-4. Remove any sensitive information from screenshots.
+4. Remove sensitive information from screenshots.
 5. Add credential files to `.gitignore`.
 
-For AWS credential management best practices, refer to the [AWS Security Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) guide.
+For detailed security practices, refer to [AWS Security Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 
 ---
 
 ## ⚠️ Important Notes
 
-- **Dry Run**: Always perform a dry run before executing AWS Nuke to ensure you understand the resources being deleted.
+- **Dry Run**: Always perform a dry run before executing AWS Nuke.
 - **Irreversible Action**: AWS Nuke deletes resources permanently. Double-check before proceeding.
 - **Region-Specific**: Specify the region to target specific resources.
 
@@ -207,7 +198,7 @@ Feel free to contribute by improving documentation or adding new features. Open 
 
 ## ❤️ Created With Love
 
-This project was created with ❤️ by **Subhajit Chowdhury**. Special thanks to my senior **[Senior's Name]** for suggesting this tool and guiding me through the process.
+This project was created with ❤️ by **Subhajit Chowdhury**.
 
 ### Connect With Me:  
 - 🌐 [LinkedIn](https://www.linkedin.com/in/subhajitch0wdhury/)  
