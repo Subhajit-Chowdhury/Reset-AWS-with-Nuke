@@ -107,7 +107,7 @@ Install AWS Nuke based on your operating system:
    ```bash
    cloud-nuke -h
    ```
-   ![Cloud Nuke Help](screenshots/cloud-nuke-h.png)  
+   ![Cloud Nuke Help](screenshots/cloud-nuke-help.png)  
    *Display the help menu for AWS Nuke to see available commands and options.*
 
 4. **Inspect AWS Resources**
@@ -121,21 +121,21 @@ Install AWS Nuke based on your operating system:
    *Detailed output of resources found during inspection. Review this to understand what will be affected.*
 
    ### 🎬 Video Walkthrough: Inspect Command
-   [![Watch the Inspect Command Demo](screenshots/aws-inspect-command-thumbnail.png)](screenshots/Administrator_ Command Prompt - cloud-nuke  inspect-aws 2025-05-28 23-55-25.mp4)  
+   [![Watch the Inspect Command Demo](screenshots/aws-inspect-command-thumbnail.png)](screenshots/aws-inspect-command.mp4)  
    *Click the image above to watch the video walkthrough of running the `inspect-aws` command. This demonstrates how to inspect resources before deletion.*
 
 5. **List Resource Types**
    ```bash
    cloud-nuke aws --list-resource-types
    ```
-   ![List Resource Types](screenshots/cloud-nuke-aws-check.png)  
+   ![List Resource Types](screenshots/cloud-nuke-list-resource-types.png)  
    *See all resource types that AWS Nuke can delete. Useful for targeting specific resources.*
 
 6. **Perform a Dry Run**
    ```bash
    cloud-nuke aws --resource-type ec2 --dry-run
    ```
-   ![Dry Run](screenshots/Dry Run.png)  
+   ![Dry Run](screenshots/cloud-nuke-dry-run.png)  
    *Simulate the deletion process to preview what will be removed. Always do a dry run before actual nuking!*
 
 7. **Execute AWS Nuke**
@@ -145,16 +145,16 @@ Install AWS Nuke based on your operating system:
    ![Nuke Confirmation](screenshots/aws-nuke-confirm.png)  
    *AWS Nuke will ask for confirmation before proceeding with deletion.*
 
-   ![Final Nuke List and Confirmation](screenshots/final-nuke-list-and-confirmation.png)  
+   ![Final Nuke List and Confirmation](screenshots/aws-nuke-final-confirmation.png)  
    *Final list of resources to be deleted. Double-check this list before confirming!*
 
-   ![Confirming Nuke](screenshots/confirming-nuke.png)  
+   ![Confirming Nuke](screenshots/aws-nuke-confirming.png)  
    *Type 'yes' to confirm and start the nuke operation.*
 
-   ![Nuke Done](screenshots/nuke-done.png)  
+   ![Nuke Done](screenshots/aws-nuke-done.png)  
    *AWS Nuke has finished deleting resources. Your account should now be clean.*
 
-   ![After Nuke Check](screenshots/After-nuke-check-from-cmd.png)  
+   ![After Nuke Check](screenshots/aws-after-nuke-check.png)  
    *Verify that all resources have been deleted by listing resources again. Your account should now be empty.*
 
 ---
