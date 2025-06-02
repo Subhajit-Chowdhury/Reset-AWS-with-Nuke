@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License"/>
 </p>
 
-![AWS Nuke Banner](screenshots/aws-resources-before.png)  
+![AWS Nuke Banner](screenshots/aws resources before-before.png)  
 *Initial state of AWS resources before running AWS Nuke. This shows the AWS account with existing resources that will be cleaned up.*
 
 ---
@@ -61,7 +61,7 @@ aws configure
 ```
 Provide your AWS access key, secret key, region, and output format.
 
-![AWS Configure](screenshots/aws-config.png)  
+![AWS Configure](screenshots/aws config.png) 
 *Configure your AWS CLI with your credentials and default region. This step is required for AWS Nuke to access your account.*
 
 ### 3️⃣ Install AWS Nuke
@@ -100,7 +100,7 @@ Install AWS Nuke based on your operating system:
    ```bash
    aws s3 ls
    ```
-   ![AWS S3 List](screenshots/aws-test.png)  
+   ![AWS S3 List](screenshots/aws test.png) 
    *Optionally, list your S3 buckets to see what resources exist before nuking.*
 
 3. **Check AWS Nuke Help**
@@ -114,10 +114,10 @@ Install AWS Nuke based on your operating system:
    ```bash
    cloud-nuke inspect-aws --region ap-south-1
    ```
-   ![Inspect AWS Resources](screenshots/cloud-nuke-inspect.png)  
+   ![Inspect AWS Resources](screenshots/cloud-nuke inspect.png)  
    *Scan your AWS account for all resources in the specified region before deletion.*
 
-   ![Inspect Result](screenshots/cloud-nuke-inspect-result.png)  
+   ![Inspect Result](screenshots/cloud-nuke-inspect result.png)  
    *Detailed output of resources found during inspection. Review this to understand what will be affected.*
 
    ### 🎬 Video Walkthrough: Inspect Command
@@ -128,7 +128,7 @@ Install AWS Nuke based on your operating system:
    ```bash
    cloud-nuke aws --list-resource-types
    ```
-   ![List Resource Types](screenshots/cloud-nuke-aws-check.png)  
+   ![List Resource Types](screenshots/cloud-nuke aws check.png)  
    *See all resource types that AWS Nuke can delete. Useful for targeting specific resources.*
 
 6. **Perform a Dry Run**
