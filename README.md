@@ -1,18 +1,42 @@
 # AWS Account Reset Using AWS Nuke 🚀
 
-![AWS Nuke Banner](aws resources before.png)
+<p align="center">
+  <img src="https://img.shields.io/badge/AWS%20Nuke-Automated%20Account%20Cleanup-orange?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS Nuke Banner"/>
+  <img src="https://img.shields.io/badge/Platform-AWS-blue?style=for-the-badge&logo=amazonaws&logoColor=white" alt="Platform AWS"/>
+  <img src="https://img.shields.io/badge/Status-Production-green?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Production Status"/>
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License"/>
+</p>
 
-Welcome to the **Nuke_AWS** project! This repository documents the process of resetting an AWS account to its default state using the open-source tool **AWS Nuke**. Whether you're cleaning up resources or preparing your account for a fresh start, this guide will help you perform the task efficiently and safely.
+![AWS Nuke Banner](aws resources before.png)  
+*Initial state of AWS resources before running AWS Nuke. This shows the AWS account with existing resources that will be cleaned up.*
+
+---
+
+## 🎬 Full Video Walkthrough
+
+[![Watch the full AWS Nuke demo](screenshots/aws-nuke-demo-thumbnail.png)](screenshots/aws-nuke-demo.mp4)  
+*Click the image above to watch a full screen-recorded walkthrough of the entire AWS Nuke process, from setup to verification. This video demonstrates every step shown below in real time.*
 
 ---
 
 ## 📖 What is AWS Nuke?
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Open%20Source-Yes-brightgreen?style=flat-square&logo=github" alt="Open Source"/>
+  <img src="https://img.shields.io/badge/Automation-100%25-blueviolet?style=flat-square&logo=githubactions" alt="Automation"/>
+</p>
 
 AWS Nuke is an open-source tool designed to delete all resources in an AWS account. It ensures that your account is restored to a clean slate, similar to its default state. This is particularly useful for testing, development, or compliance purposes.
 
 ---
 
 ## 🛠 Prerequisites
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Step%201-Install%20AWS%20CLI-blue?style=flat-square" alt="Step 1"/>
+  <img src="https://img.shields.io/badge/Step%202-Configure%20AWS%20CLI-blue?style=flat-square" alt="Step 2"/>
+  <img src="https://img.shields.io/badge/Step%203-Install%20AWS%20Nuke-blue?style=flat-square" alt="Step 3"/>
+</p>
 
 Before you begin, ensure the following:
 
@@ -33,7 +57,8 @@ Follow the official guide to install the AWS CLI:
 ```bash
 aws --version
 ```
-![AWS CLI Version](aws-v.png)
+![AWS CLI Version](aws-v.png)  
+*Run `aws --version` to verify that the AWS CLI is installed correctly and accessible from your terminal.*
 
 ### 2️⃣ Configure AWS CLI
 
@@ -43,7 +68,8 @@ aws configure
 ```
 Provide your AWS access key, secret key, region, and output format.
 
-![AWS Configure](aws config.png)
+![AWS Configure](aws config.png)  
+*Configure your AWS CLI with your credentials and default region. This step is required for AWS Nuke to access your account.*
 
 ### 3️⃣ Install AWS Nuke
 
@@ -62,6 +88,8 @@ Install AWS Nuke based on your operating system:
   winget install cloud-nuke
   ```
 
+*Choose the installation command based on your OS. This will install the AWS Nuke tool required for the reset process.*
+
 ---
 
 ## 🔧 Usage Instructions
@@ -72,48 +100,65 @@ Install AWS Nuke based on your operating system:
    ```bash
    aws --version
    ```
-   ![AWS CLI Version](aws-v.png)
+   ![AWS CLI Version](aws-v.png)  
+   *Ensure the AWS CLI is working before proceeding.*
 
 2. **List S3 Buckets (Optional)**
    ```bash
    aws s3 ls
    ```
-   ![AWS S3 List](aws test.png)
+   ![AWS S3 List](aws test.png)  
+   *Optionally, list your S3 buckets to see what resources exist before nuking.*
 
 3. **Check AWS Nuke Help**
    ```bash
    cloud-nuke -h
    ```
-   ![Cloud Nuke Help](cloud-nuke -h.png)
+   ![Cloud Nuke Help](cloud-nuke -h.png)  
+   *Display the help menu for AWS Nuke to see available commands and options.*
 
 4. **Inspect AWS Resources**
    ```bash
    cloud-nuke inspect-aws --region ap-south-1
    ```
-   ![Inspect AWS Resources](cloud-nuke inspect.png)
-   ![Inspect Result](cloud-nuke inspect result.png)
+   ![Inspect AWS Resources](cloud-nuke inspect.png)  
+   *Scan your AWS account for all resources in the specified region before deletion.*
+
+   ![Inspect Result](cloud-nuke inspect result.png)  
+   *Detailed output of resources found during inspection. Review this to understand what will be affected.*
 
 5. **List Resource Types**
    ```bash
    cloud-nuke aws --list-resource-types
    ```
-   ![List Resource Types](cloud-nuke aws check.png)
+   ![List Resource Types](cloud-nuke aws check.png)  
+   *See all resource types that AWS Nuke can delete. Useful for targeting specific resources.*
 
 6. **Perform a Dry Run**
    ```bash
    cloud-nuke aws --resource-type ec2 --dry-run
    ```
-   ![Dry Run](Dry Run.png)
+   ![Dry Run](Dry Run.png)  
+   *Simulate the deletion process to preview what will be removed. Always do a dry run before actual nuking!*
 
 7. **Execute AWS Nuke**
    ```bash
    cloud-nuke aws --region ap-south-1
    ```
-   ![Nuke Confirmation](aws nuke- confirm.png)
-   ![Final Nuke List and Confirmation](final nuke list and confirmation.png)
-   ![Confirming Nuke](confirming nuke .png)
-   ![Nuke Done](nuke done .png)
-   ![After Nuke Check](After nuke check from cmd.png)
+   ![Nuke Confirmation](aws nuke- confirm.png)  
+   *AWS Nuke will ask for confirmation before proceeding with deletion.*
+
+   ![Final Nuke List and Confirmation](final nuke list and confirmation.png)  
+   *Final list of resources to be deleted. Double-check this list before confirming!*
+
+   ![Confirming Nuke](confirming nuke .png)  
+   *Type 'yes' to confirm and start the nuke operation.*
+
+   ![Nuke Done](nuke done .png)  
+   *AWS Nuke has finished deleting resources. Your account should now be clean.*
+
+   ![After Nuke Check](After nuke check from cmd.png)  
+   *Verify that all resources have been deleted by listing resources again. Your account should now be empty.*
 
 ---
 
@@ -121,11 +166,11 @@ Install AWS Nuke based on your operating system:
 
 **IMPORTANT**: This repository contains documentation about AWS resource management. When using this guide:
 
-1. Never commit AWS credentials to GitHub
-2. Always use AWS best practices for credential management
-3. Use AWS IAM roles and temporary credentials where possible
-4. Remove any sensitive information from screenshots
-5. Add credential files to `.gitignore`
+1. Never commit AWS credentials to GitHub.
+2. Always use AWS best practices for credential management.
+3. Use AWS IAM roles and temporary credentials where possible.
+4. Remove any sensitive information from screenshots.
+5. Add credential files to `.gitignore`.
 
 For AWS credential management best practices, refer to the [AWS Security Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) guide.
 
