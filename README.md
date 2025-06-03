@@ -12,12 +12,20 @@
 
 ---
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Section-Overview-blueviolet?style=for-the-badge"/>
+</p>
+
 ## Overview
 
 AWS Nuke is an open-source tool to delete all resources in an AWS account, restoring it to a clean state.  
 [Full documentation →](https://github.com/rebuy-de/aws-nuke)
 
 ---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Section-Quick%20Links-blue?style=for-the-badge"/>
+</p>
 
 ## Quick Links
 
@@ -28,6 +36,10 @@ AWS Nuke is an open-source tool to delete all resources in an AWS account, resto
 
 ---
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Section-Prerequisites-9cf?style=for-the-badge"/>
+</p>
+
 ## Prerequisites
 
 - AWS CLI installed and configured
@@ -35,6 +47,10 @@ AWS Nuke is an open-source tool to delete all resources in an AWS account, resto
 - AWS Nuke installed (`cloud-nuke` or `cloud-nuke.exe` for Windows)
 
 ---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Section-Installation-success?style=for-the-badge"/>
+</p>
 
 ## Installation
 
@@ -68,6 +84,10 @@ aws configure
     - Run commands as `cloud-nuke.exe ...`
 
 ---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Section-Usage-ff69b4?style=for-the-badge"/>
+</p>
 
 ## Usage
 
@@ -123,6 +143,10 @@ cloud-nuke aws --region ap-south-1
 
 ---
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Section-Security-critical?style=for-the-badge"/>
+</p>
+
 ## Security
 
 - Never commit AWS credentials to GitHub.
@@ -134,6 +158,10 @@ cloud-nuke aws --region ap-south-1
 
 ---
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Section-Resources-blue?style=for-the-badge"/>
+</p>
+
 ## Additional Resources
 
 - [AWS Nuke GitHub](https://github.com/rebuy-de/aws-nuke)
@@ -142,6 +170,10 @@ cloud-nuke aws --region ap-south-1
 
 ---
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Section-Acknowledgments-lightgrey?style=for-the-badge"/>
+</p>
+
 ## Acknowledgments
 
 Special thanks to [Senior Name](https://github.com/senior-github) ([Medium](https://medium.com/@senior-medium) | [LinkedIn](https://linkedin.com/in/senior-linkedin))  
@@ -149,12 +181,20 @@ for guidance and support in helping me discover and successfully use AWS Nuke to
 
 ---
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Section-Reference%20Video-yellow?style=for-the-badge"/>
+</p>
+
 ## Reference Video
 
 The following YouTube video was instrumental in completing this project:  
 [YouTube: AWS Nuke Guide](https://youtu.be/odk_NuQNJTc?si=wypMlFZcLFyxkEd9)
 
 ---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Built%20With-Love-red?style=for-the-badge"/>
+</p>
 
 ## Built With Love
 
