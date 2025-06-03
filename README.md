@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge"/>
 </p>
 
-![AWS Nuke Banner](screenshots/aws-resources-before.png)  
+![AWS Nuke Banner](screenshots/aws-resources-before.png)
 *AWS account before running AWS Nuke.*
 
 ---
@@ -63,8 +63,8 @@ aws configure
     ```bash
     winget install cloud-nuke
     ```
-  - Or use the included `cloud-nuke.exe` in this repo:
-    - Download or copy `cloud-nuke.exe` to your working directory.
+  - Or use the included `cloud-nuke.exe` in this repo:  
+    - Download or copy `cloud-nuke.exe` to your working directory.  
     - Run commands as `cloud-nuke.exe ...`
 
 ---
@@ -94,7 +94,7 @@ cloud-nuke inspect-aws --region ap-south-1
 ![Inspect Result](screenshots/cloud-nuke-inspect-result.png)
 
 **Video: Inspect Command Demo**  
-[![Watch the Inspect Command Demo](screenshots/aws-inspect-command-thumbnail.png)](screenshots/Administrator_Command_Prompt-cloud-nuke-inspect-aws-2025-05-28-23-55-25.mp4)
+[![Watch the Inspect Command Demo](screenshots/aws-inspect-command-thumbnail.png)](screenshots/administrator-command-prompt-cloud-nuke-inspect-aws-2025-05-28-23-55-25.mp4)
 
 **4. (Optional) List Resource Types**
 
@@ -108,7 +108,7 @@ cloud-nuke aws --list-resource-types
 ```bash
 cloud-nuke aws --resource-type ec2 --dry-run
 ```
-![Dry Run](screenshots/Dry-Run.png)
+![Dry Run](screenshots/dry-run.png)
 
 **6. Nuke All Resources**
 
@@ -119,7 +119,7 @@ cloud-nuke aws --region ap-south-1
 ![Final Nuke List](screenshots/final-nuke-list-and-confirmation.png)  
 ![Confirming Nuke](screenshots/confirming-nuke.png)  
 ![Nuke Done](screenshots/nuke-done.png)  
-![After Nuke Check](screenshots/After-nuke-check-from-cmd.png)
+![After Nuke Check](screenshots/after-nuke-check-from-cmd.png)
 
 ---
 
