@@ -137,7 +137,7 @@ cloud-nuke inspect-aws --region ap-south-1
 <br/>
 
 **Video: Inspect Command Demo**  
-[![Watch the Inspect Command Demo](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/nuke%20inpected%20resources.png)](screenshots/administrator-command-prompt-cloud-nuke-inspect-aws-2025-05-28-23-55-25.mp4)  
+[![Watch the Inspect Command Demo](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/nuke%20inpected%20resources.png)](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/Running%20cloud-nuke%20inspect-aws%20--region%20ap-south-1.mp4)  
 *Video walkthrough of the inspect command in action.*
 
 <br/>
