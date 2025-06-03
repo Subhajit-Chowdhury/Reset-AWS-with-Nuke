@@ -164,7 +164,6 @@ cloud-nuke aws --region ap-south-1
 
 ## Additional Resources
 
-- [AWS Nuke GitHub](https://github.com/rebuy-de/aws-nuke)
 - [Cloud Nuke (Gruntwork)](https://github.com/gruntwork-io/cloud-nuke)
 - [YouTube: AWS Nuke Guide](https://youtu.be/odk_NuQNJTc?si=wypMlFZcLFyxkEd9)
 
