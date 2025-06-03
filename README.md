@@ -1,25 +1,25 @@
 # AWS Account Reset Using AWS Nuke 🚀
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AWS%20Nuke-Automated%20Account%20Cleanup-orange?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS Nuke Banner"/>
-  <img src="https://img.shields.io/badge/Platform-AWS-blue?style=for-the-badge&logo=amazonaws&logoColor=white" alt="Platform AWS"/>
-  <img src="https://img.shields.io/badge/Status-Production-green?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Production Status"/>
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License"/>
+  <img src="https://img.shields.io/badge/AWS%20Nuke-Automated%20Account%20Cleanup-orange?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Platform-AWS-blue?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Status-Production-green?style=for-the-badge&logo=checkmarx&logoColor=white"/>
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge"/>
 </p>
 
 ![AWS Nuke Banner](screenshots/aws-resources-before.png)  
-*Initial state of AWS resources before running AWS Nuke.*
+*AWS account before running AWS Nuke.*
 
 ---
 
-## 📖 What is AWS Nuke?
+## What is AWS Nuke?
 
 AWS Nuke is an open-source tool to delete all resources in an AWS account, restoring it to a clean slate.  
 For full documentation, see the [AWS Nuke GitHub Repository](https://github.com/rebuy-de/aws-nuke).
 
 ---
 
-## 🛠 Prerequisites
+## Prerequisites
 
 1. **AWS CLI**: [Install or update](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 2. **AWS Account Access**: Admin access required.
@@ -69,21 +69,21 @@ aws --version
 ```
 ![AWS CLI Version](screenshots/aws-v.png)
 
-### 2. (Optional) List S3 Buckets
+**1. (Optional) List S3 Buckets**
 
 ```bash
 aws s3 ls
 ```
 ![AWS S3 List](screenshots/aws-test.png)
 
-### 3. AWS Nuke Help
+**2. See AWS Nuke Help**
 
 ```bash
 cloud-nuke -h
 ```
 ![Cloud Nuke Help](screenshots/cloud-nuke-h.png)
 
-### 4. Inspect AWS Resources
+**3. Inspect Resources (Preview what will be deleted)**
 
 ```bash
 cloud-nuke inspect-aws --region ap-south-1
@@ -91,25 +91,25 @@ cloud-nuke inspect-aws --region ap-south-1
 ![Inspect AWS Resources](screenshots/cloud-nuke-inspect.png)  
 ![Inspect Result](screenshots/cloud-nuke-inspect-result.png)
 
-#### 🎬 Video: Inspect Command Demo
+**Video: Inspect Command Demo**  
 [![Watch the Inspect Command Demo](screenshots/aws-inspect-command-thumbnail.png)](screenshots/Administrator_Command_Prompt-cloud-nuke-inspect-aws-2025-05-28-23-55-25.mp4)  
 *See how to inspect resources before deletion.*
 
-### 5. List Resource Types
+**4. (Optional) List Resource Types**
 
 ```bash
 cloud-nuke aws --list-resource-types
 ```
 ![List Resource Types](screenshots/cloud-nuke-aws-check.png)
 
-### 6. Dry Run
+**5. (Recommended) Dry Run**
 
 ```bash
 cloud-nuke aws --resource-type ec2 --dry-run
 ```
 ![Dry Run](screenshots/Dry-Run.png)
 
-### 7. Execute AWS Nuke
+**6. Nuke All Resources**
 
 ```bash
 cloud-nuke aws --region ap-south-1
@@ -129,7 +129,7 @@ cloud-nuke aws --region ap-south-1
 - Remove sensitive info from screenshots.
 - Add credential files to `.gitignore`.
 
-[Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+[Security Best Practices →](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 
 ---
 
@@ -143,7 +143,7 @@ cloud-nuke aws --region ap-south-1
 
 ## 📚 Additional Resources
 
-- [AWS Nuke GitHub](https://github.com/rebuy-de/aws-nuke)  
+- [AWS Nuke GitHub](https://github.com/rebuy-de/aws-nuke)
 - [Cloud Nuke (Gruntwork)](https://github.com/gruntwork-io/cloud-nuke)
 - [YouTube: AWS Nuke Guide](https://youtu.be/odk_NuQNJTc?si=wypMlFZcLFyxkEd9)
 
