@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge"/>
 </p>
 
-![AWS Nuke Banner](screenshots/aws-resources-before.png)
+![AWS Nuke Banner](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/aws%20resources%20before.png)
 *AWS account before running AWS Nuke.*
 
 ---
@@ -59,14 +59,14 @@ AWS Nuke is an open-source tool to delete all resources in an AWS account, resto
 ```bash
 aws --version
 ```
-![AWS CLI Version](screenshots/aws-v.png)
+![AWS CLI Version](aws-v.png)
 
 **2. Configure AWS CLI**
 
 ```bash
 aws configure
 ```
-![AWS Configure](screenshots/aws-config.png)
+![AWS Configure](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/aws%20config.png)
 
 **3. Install AWS Nuke**
 
@@ -96,50 +96,50 @@ aws configure
 ```bash
 aws s3 ls
 ```
-![AWS S3 List](screenshots/aws-test.png)
+![AWS S3 List](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/aws%20test.png)
 
 **2. AWS Nuke Help**
 
 ```bash
 cloud-nuke -h
 ```
-![Cloud Nuke Help](screenshots/cloud-nuke-h.png)
+![Cloud Nuke Help](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/cloud-nuke%20--help.png)
 
 **3. Inspect Resources (Preview what will be deleted)**
 
 ```bash
 cloud-nuke inspect-aws --region ap-south-1
 ```
-![Inspect AWS Resources](screenshots/cloud-nuke-inspect.png)  
-![Inspect Result](screenshots/cloud-nuke-inspect-result.png)
+![Inspect AWS Resources](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/cloud-nuke%20inspect.png)  
+![Inspect Result](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/cloud-nuke%20inspect%20result.png)
 
 **Video: Inspect Command Demo**  
-[![Watch the Inspect Command Demo](screenshots/aws-inspect-command-thumbnail.png)](screenshots/administrator-command-prompt-cloud-nuke-inspect-aws-2025-05-28-23-55-25.mp4)
+[![Watch the Inspect Command Demo](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/nuke%20inpected%20resources.png)](screenshots/administrator-command-prompt-cloud-nuke-inspect-aws-2025-05-28-23-55-25.mp4)
 
 **4. (Optional) List Resource Types**
 
 ```bash
 cloud-nuke aws --list-resource-types
 ```
-![List Resource Types](screenshots/cloud-nuke-aws-check.png)
+![List Resource Types](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/nuke%20inpected%20resources.png)
 
 **5. (Recommended) Dry Run**
 
 ```bash
 cloud-nuke aws --resource-type ec2 --dry-run
 ```
-![Dry Run](screenshots/dry-run.png)
+![Dry Run](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/Dry%20Run.png)
 
 **6. Nuke All Resources**
 
 ```bash
 cloud-nuke aws --region ap-south-1
 ```
-![Nuke Confirmation](screenshots/aws-nuke-confirm.png)  
-![Final Nuke List](screenshots/final-nuke-list-and-confirmation.png)  
-![Confirming Nuke](screenshots/confirming-nuke.png)  
-![Nuke Done](screenshots/nuke-done.png)  
-![After Nuke Check](screenshots/after-nuke-check-from-cmd.png)
+![Nuke Confirmation](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/aws%20nuke-%20confirm.png)  
+![Final Nuke List](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/final%20nuke%20list%20and%20confirmation.png)  
+![Confirming Nuke](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/confirming%20nuke%20.png)  
+![Nuke Done](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/nuke%20done%20.png)  
+![After Nuke Check](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/After%20nuke%20check%20from%20cmd.png)
 
 ---
 
@@ -176,7 +176,7 @@ cloud-nuke aws --region ap-south-1
 
 ## Acknowledgments
 
-Special thanks to [Senior Name](https://github.com/senior-github) ([Medium](https://medium.com/@senior-medium) | [LinkedIn](https://linkedin.com/in/senior-linkedin))  
+Special thanks to [Sami Banerjee](https://github.com/TryToLearnProgramming) ([Medium](https://medium.com/@er.samibanerjee) | [LinkedIn](https://www.linkedin.com/in/devops-engineer-samibanerjee/))  
 for guidance and support in helping me discover and successfully use AWS Nuke to reset my AWS account.
 
 ---
