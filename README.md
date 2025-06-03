@@ -1,14 +1,18 @@
 # AWS Account Reset Using AWS Nuke 🚀
 
 <p align="center">
+  <img src="screenshots/project-banner.png" alt="AWS Nuke Project Banner" width="100%"/>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/AWS%20Nuke-Automated%20Account%20Cleanup-orange?style=for-the-badge&logo=amazonaws&logoColor=white"/>
   <img src="https://img.shields.io/badge/Platform-AWS-blue?style=for-the-badge&logo=amazonaws&logoColor=white"/>
   <img src="https://img.shields.io/badge/Status-Production-green?style=for-the-badge&logo=checkmarx&logoColor=white"/>
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge"/>
 </p>
 
-![AWS Nuke Banner](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/aws%20resources%20before.png)
-*AWS account before running AWS Nuke.*
+![AWS account before running AWS Nuke](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/aws%20resources%20before.png)  
+*Shows the AWS account with resources before cleanup.*
 
 ---
 
@@ -59,14 +63,16 @@ AWS Nuke is an open-source tool to delete all resources in an AWS account, resto
 ```bash
 aws --version
 ```
-![AWS CLI Version](aws-v.png)
+![AWS CLI Version](aws-v.png)  
+*Verifies AWS CLI is installed and accessible.*
 
 **2. Configure AWS CLI**
 
 ```bash
 aws configure
 ```
-![AWS Configure](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/aws%20config.png)
+![AWS Configure](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/aws%20config.png)  
+*Configure your AWS credentials and default region.*
 
 **3. Install AWS Nuke**
 
@@ -96,14 +102,16 @@ aws configure
 ```bash
 aws s3 ls
 ```
-![AWS S3 List](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/aws%20test.png)
+![AWS S3 List](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/aws%20test.png)  
+*Displays all S3 buckets in your AWS account before cleanup.*
 
 **2. AWS Nuke Help**
 
 ```bash
 cloud-nuke -h
 ```
-![Cloud Nuke Help](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/cloud-nuke%20--help.png)
+![Cloud Nuke Help](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/cloud-nuke%20--help.png)  
+*Shows available commands and options for AWS Nuke.*
 
 **3. Inspect Resources (Preview what will be deleted)**
 
@@ -111,24 +119,30 @@ cloud-nuke -h
 cloud-nuke inspect-aws --region ap-south-1
 ```
 ![Inspect AWS Resources](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/cloud-nuke%20inspect.png)  
-![Inspect Result](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/cloud-nuke%20inspect%20result.png)
+*Scans and lists all AWS resources in the specified region.*
+
+![Inspect Result](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/cloud-nuke%20inspect%20result.png)  
+*Detailed output of resources found during inspection.*
 
 **Video: Inspect Command Demo**  
-[![Watch the Inspect Command Demo](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/nuke%20inpected%20resources.png)](screenshots/administrator-command-prompt-cloud-nuke-inspect-aws-2025-05-28-23-55-25.mp4)
+[![Watch the Inspect Command Demo](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/nuke%20inpected%20resources.png)](screenshots/administrator-command-prompt-cloud-nuke-inspect-aws-2025-05-28-23-55-25.mp4)  
+*Video walkthrough of the inspect command in action.*
 
 **4. (Optional) List Resource Types**
 
 ```bash
 cloud-nuke aws --list-resource-types
 ```
-![List Resource Types](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/nuke%20inpected%20resources.png)
+![List Resource Types](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/nuke%20inpected%20resources.png)  
+*Lists all AWS resource types that can be deleted by AWS Nuke.*
 
 **5. (Recommended) Dry Run**
 
 ```bash
 cloud-nuke aws --resource-type ec2 --dry-run
 ```
-![Dry Run](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/Dry%20Run.png)
+![Dry Run](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/Dry%20Run.png)  
+*Simulates the deletion process to preview what will be removed.*
 
 **6. Nuke All Resources**
 
@@ -136,10 +150,19 @@ cloud-nuke aws --resource-type ec2 --dry-run
 cloud-nuke aws --region ap-south-1
 ```
 ![Nuke Confirmation](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/aws%20nuke-%20confirm.png)  
+*AWS Nuke asks for confirmation before deleting resources.*
+
 ![Final Nuke List](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/final%20nuke%20list%20and%20confirmation.png)  
+*Final list of resources to be deleted.*
+
 ![Confirming Nuke](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/confirming%20nuke%20.png)  
+*Confirmation step before proceeding with deletion.*
+
 ![Nuke Done](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/nuke%20done%20.png)  
-![After Nuke Check](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/After%20nuke%20check%20from%20cmd.png)
+*AWS Nuke has finished deleting resources.*
+
+![After Nuke Check](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/After%20nuke%20check%20from%20cmd.png)  
+*Verifies that all resources have been deleted after running AWS Nuke.*
 
 ---
 
