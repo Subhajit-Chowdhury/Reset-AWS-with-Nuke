@@ -12,62 +12,64 @@
 
 ---
 
-## What is AWS Nuke?
+## Overview
 
-AWS Nuke is an open-source tool to delete all resources in an AWS account, restoring it to a clean slate.  
-For full documentation, see the [AWS Nuke GitHub Repository](https://github.com/rebuy-de/aws-nuke).
+AWS Nuke is an open-source tool to delete all resources in an AWS account, restoring it to a clean state.  
+[Full documentation →](https://github.com/rebuy-de/aws-nuke)
+
+---
+
+## Quick Links
+
+- [AWS CLI Install/Update](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- [AWS Nuke GitHub](https://github.com/rebuy-de/aws-nuke)
+- [Cloud Nuke (Gruntwork)](https://github.com/gruntwork-io/cloud-nuke)
+- [YouTube Guide Tutorial](https://youtu.be/odk_NuQNJTc?si=wypMlFZcLFyxkEd9)
 
 ---
 
 ## Prerequisites
 
-1. **AWS CLI**: [Install or update](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-2. **AWS Account Access**: Admin access required.
-3. **AWS Nuke**: See install steps below.
+- AWS CLI installed and configured
+- Admin access to your AWS account
+- AWS Nuke installed (`cloud-nuke` or `cloud-nuke.exe` for Windows)
 
 ---
 
-## 📦 Installation Steps
+## Installation
 
-### 1️⃣ Install AWS CLI
-
-[Official Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+**1. Install or update AWS CLI**
 
 ```bash
 aws --version
 ```
-![AWS CLI Version](screenshots/aws-v.png)  
-*Check AWS CLI installation.*
+![AWS CLI Version](screenshots/aws-v.png)
 
-### 2️⃣ Configure AWS CLI
+**2. Configure AWS CLI**
 
 ```bash
 aws configure
 ```
-![AWS Configure](screenshots/aws-config.png)  
-*Set up your AWS credentials and region.*
+![AWS Configure](screenshots/aws-config.png)
 
-### 3️⃣ Install AWS Nuke
+**3. Install AWS Nuke**
 
 - **macOS/Linux**:  
   ```bash
   brew install cloud-nuke
   ```
 - **Windows**:  
-  ```bash
-  winget install cloud-nuke
-  ```
+  - Recommended:  
+    ```bash
+    winget install cloud-nuke
+    ```
+  - Or use the included `cloud-nuke.exe` in this repo:
+    - Download or copy `cloud-nuke.exe` to your working directory.
+    - Run commands as `cloud-nuke.exe ...`
 
 ---
 
-## 🔧 Usage Instructions
-
-### 1. Verify AWS CLI
-
-```bash
-aws --version
-```
-![AWS CLI Version](screenshots/aws-v.png)
+## Usage
 
 **1. (Optional) List S3 Buckets**
 
@@ -76,7 +78,7 @@ aws s3 ls
 ```
 ![AWS S3 List](screenshots/aws-test.png)
 
-**2. See AWS Nuke Help**
+**2. AWS Nuke Help**
 
 ```bash
 cloud-nuke -h
@@ -92,8 +94,7 @@ cloud-nuke inspect-aws --region ap-south-1
 ![Inspect Result](screenshots/cloud-nuke-inspect-result.png)
 
 **Video: Inspect Command Demo**  
-[![Watch the Inspect Command Demo](screenshots/aws-inspect-command-thumbnail.png)](screenshots/Administrator_Command_Prompt-cloud-nuke-inspect-aws-2025-05-28-23-55-25.mp4)  
-*See how to inspect resources before deletion.*
+[![Watch the Inspect Command Demo](screenshots/aws-inspect-command-thumbnail.png)](screenshots/Administrator_Command_Prompt-cloud-nuke-inspect-aws-2025-05-28-23-55-25.mp4)
 
 **4. (Optional) List Resource Types**
 
@@ -122,7 +123,7 @@ cloud-nuke aws --region ap-south-1
 
 ---
 
-## 🔒 Security Notice
+## Security
 
 - Never commit AWS credentials to GitHub.
 - Use IAM roles and temporary credentials.
@@ -133,15 +134,7 @@ cloud-nuke aws --region ap-south-1
 
 ---
 
-## ⚠️ Important Notes
-
-- Always perform a dry run before nuking.
-- Deletion is permanent.
-- Specify the region as needed.
-
----
-
-## 📚 Additional Resources
+## Additional Resources
 
 - [AWS Nuke GitHub](https://github.com/rebuy-de/aws-nuke)
 - [Cloud Nuke (Gruntwork)](https://github.com/gruntwork-io/cloud-nuke)
@@ -149,39 +142,11 @@ cloud-nuke aws --region ap-south-1
 
 ---
 
-## 🎯 Project Goals
-
-- Provide a clear guide for resetting AWS accounts with AWS Nuke.
-- Document commands and resources for reference.
-- Ensure safe and efficient usage.
-
----
-
-## 🤝 Contributions
-
-Contributions welcome. Open a pull request or issue.
-
----
-
-## ❤️ Created By
-
-**Subhajit Chowdhury**  
-[LinkedIn](https://www.linkedin.com/in/subhajitch0wdhury/) | [GitHub](https://github.com/Subhajit-Chowdhury) | er.subhajitchowdhury@gmail.com
-
----
-
-## 📜 License
+## License
 
 MIT License. See LICENSE file.
 
 ---
 
-## 🔗 References
-
-- [AWS CLI Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-- [AWS Nuke GitHub](https://github.com/rebuy-de/aws-nuke)
-
----
-
-Thank you for visiting the **Nuke_AWS** project!  
+Thank you for visiting the **Nuke_AWS** project.  
 Happy nuking! 💥
