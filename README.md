@@ -144,7 +144,8 @@ cloud-nuke aws --region ap-south-1
 
 ## Acknowledgments
 
-Special thanks to **[Senior's Name]** for guidance and support in helping me discover and successfully use AWS Nuke to reset my AWS account.
+Special thanks to [Senior Name](https://github.com/senior-github) ([Medium](https://medium.com/@senior-medium) | [LinkedIn](https://linkedin.com/in/senior-linkedin))  
+for guidance and support in helping me discover and successfully use AWS Nuke to reset my AWS account.
 
 ---
 
@@ -170,5 +171,5 @@ MIT License. See LICENSE file.
 
 ---
 
-Thank you for visiting the **Nuke_AWS** project.
+Thank you for visiting the **Nuke_AWS** project.  
 Happy nuking! 💥
