@@ -142,11 +142,33 @@ cloud-nuke aws --region ap-south-1
 
 ---
 
-## License
+## Acknowledgments
+
+Special thanks to **[Senior's Name]** for guidance and support in helping me discover and successfully use AWS Nuke to reset my AWS account.
+
+---
+
+## Reference Video
+
+The following YouTube video was instrumental in completing this project:  
+[YouTube: AWS Nuke Guide](https://youtu.be/odk_NuQNJTc?si=wypMlFZcLFyxkEd9)
+
+---
+
+## Built With Love
+
+This project was created with ❤️ by **Subhajit Chowdhury**.
+
+**Connect with me:**  
+- [LinkedIn](https://www.linkedin.com/in/subhajitch0wdhury/)
+- [GitHub](https://github.com/Subhajit-Chowdhury)
+- Email: er.subhajitchowdhury@gmail.com
+
+---
 
 MIT License. See LICENSE file.
 
 ---
 
-Thank you for visiting the **Nuke_AWS** project.  
+Thank you for visiting the **Nuke_AWS** project.
 Happy nuking! 💥
