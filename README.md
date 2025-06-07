@@ -5,8 +5,6 @@
 
 <!-- Save this as 'screenshots/project-banner.png' and update the README if needed -->
 
-![AWS Nuke Project Banner](https://api.banner.dev/v1/banner?title=AWS%20Account%20Reset%20with%20Nuke&subtitle=Automated%20AWS%20Resource%20Cleanup&color=orange&icon=aws)
-
 <p align="center">
   <img src="https://img.shields.io/badge/AWS%20Nuke-Automated%20Account%20Cleanup-orange?style=for-the-badge&logo=amazonaws&logoColor=white"/>
   <img src="https://img.shields.io/badge/Platform-AWS-blue?style=for-the-badge&logo=amazonaws&logoColor=white"/>
@@ -16,8 +14,7 @@
 
 <br/>
 
-![AWS account before running AWS Nuke](https://github.com/Subhajit-Chowdhury/Reset-AWS-with-Nuke/blob/main/aws%20resources%20before.png)  
-*Shows the AWS account with resources before cleanup.*
+![AWS Nuke Project Banner](nuke_aws_banner.jpg)
 
 ---
 
